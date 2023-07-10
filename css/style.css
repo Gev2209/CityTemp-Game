@@ -1,0 +1,106 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #222;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(https://source.unsplash.com/random/1600×900/?sunset);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.StartTheGame {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background: rgba(59, 58, 57, 0.774);
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 200px;
+  box-shadow: 0 0 20px black;
+}
+.StartTheGame button {
+  background-color: #5c4d4db9;
+  color: white;
+  font-size: 20px;
+  border: 1px solid #f1f1f1;
+  cursor: pointer;
+  text-align: center;
+  padding: 20px 30px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px;
+}
+.StartTheGame button:hover {
+  background-color: #c0c0c071;
+  color: #dadada;
+}
+.StartTheGame.active {
+  display: none;
+}
+.card {
+  color: white;
+  background: rgba(29, 28, 28, 0.71);
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  display: none;
+}
+.card .weather {
+  display: block;
+  text-align: center;
+}
+.card .weather .GuessTheTemp {
+  padding: 10px 5px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+.card #searchButton {
+  padding: 5px 30px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  background-color: #3a3a3a;
+  box-shadow: 0 0 10px #ffffff;
+}
+.card #searchButton:hover {
+  background-color: #000000;
+}
+.card .answers {
+  margin-top: 20px;
+  display: flex;
+  border: 1px solid red;
+}
+.card .answers li {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.card.active {
+  display: block;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search .search_bar {
+  border: none;
+  outline: none;
+  padding: 0.7em;
+  padding-right: 2em;
+  border-radius: 18px;
+  background: #7c7c7c2b;
+  color: white;
+  font-family: inherit;
+  font-size: 120%;
+  transition: 0.5s;
+  width: 80%;
+}
+.search .search_bar:hover {
+  background: #7c7c7c6b;
+}
